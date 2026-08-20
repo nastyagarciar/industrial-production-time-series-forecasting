@@ -107,13 +107,13 @@ industrial-production-time-series-forecasting/
 
 ---
 
-## Methodological Improvement
+## Validation Design
 
-The original coursework feedback identified an important validation issue: the forecasting models were not being evaluated with an appropriate and consistent test horizon.
+For the public portfolio version, both forecasting approaches are evaluated using the **same 12-month holdout period**.
 
-The public portfolio version corrects this by using the **same 12-month holdout** for both ETS and SARIMA.
+Because the series is monthly and exhibits strong annual seasonality, a 12-month TEST horizon represents one complete seasonal cycle.
 
-This makes the model comparison more interpretable and avoids evaluating one method on an unrealistically short or substantially different test period.
+Using a common evaluation window ensures that Exponential Smoothing and SARIMA are compared under the same conditions and makes the out-of-sample results directly comparable.
 
 ---
 

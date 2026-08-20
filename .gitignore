@@ -1,0 +1,16 @@
+# Source coursework data
+data/*.xlsx
+data/*.xls
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Environments / IDE
+.env
+.venv/
+venv/
+.vscode/
+.idea/
